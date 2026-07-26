@@ -41,3 +41,12 @@ ALTER TABLE signage DROP COLUMN name;
 ALTER TABLE signage ADD first_name CHAR(30) NOT NULL;
 ALTER TABLE signage ADD last_name CHAR(30);
 DROP TABLE faketable;
+
+--DML
+INSERT INTO announcement
+VALUE (null, 'Lorem Ipsum', '019/2134', 'ipsumphoto.jpg', 'this is a note for this notey note');
+INSERT INTO signage
+VALUE (null, '2010-09-30', 'Tanjung Barat', 'lorem.jpg', 1, 'John', 'Doe');
+SELECT * FROM signage;
+SELECT title FROM announcement;
+TRUNCATE TABLE signage;

@@ -30,3 +30,14 @@ CREATE TABLE content (
     announcement_id INT NOT NULL,
     FOREIGN KEY (announcement_id) REFERENCES announcement(id)
 );
+
+CREATE TABLE faketable (
+    id INT AUTO_INCREMENT PRIMARY KEY
+);
+
+ALTER TABLE announcement ADD notes TEXT;
+ALTER TABLE announcement MODIFY number VARCHAR(100);
+ALTER TABLE signage DROP COLUMN name;
+ALTER TABLE signage ADD first_name CHAR(30) NOT NULL;
+ALTER TABLE signage ADD last_name CHAR(30);
+DROP TABLE faketable;

@@ -50,3 +50,5 @@ VALUE (null, '2010-09-30', 'Tanjung Barat', 'lorem.jpg', 1, 'John', 'Doe');
 SELECT * FROM signage;
 SELECT title FROM announcement;
 TRUNCATE TABLE signage;
+UPDATE announcement SET notes = 'lorem ipsum dolor sit amet...' where id = 2;
+DELETE FROM announcement where id=2;
